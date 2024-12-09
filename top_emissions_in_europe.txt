@@ -1,0 +1,11 @@
+       Country  Kilotons of Co2 Formatted Co2_Europe
+        Russia      50028669.96        50,028,669.96
+       Germany      24367020.03        24,367,020.03
+United Kingdom      14824210.01        14,824,210.01
+         Italy      12092299.95        12,092,299.95
+        France      10543269.97        10,543,269.97
+       Ukraine       9787780.03         9,787,780.03
+        Poland       9427510.01         9,427,510.01
+         Spain       8148009.98         8,148,009.98
+   Netherlands       4828429.96         4,828,429.96
+Czech Republic       3514870.00         3,514,870.00

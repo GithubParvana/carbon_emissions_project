@@ -1,0 +1,11 @@
+         Country  Kilotons of Co2  Percentage Contribution (Oceania)
+       Australia      10421949.99                          90.483711
+     New Zealand        896770.00                           7.785786
+Papua New Guinea        129340.00                           1.122934
+            Fiji         31850.00                           0.276523
+ Solomon Islands          8430.00                           0.073190
+           Palau          6160.00                           0.053481
+           Samoa          5420.00                           0.047057
+      Micronesia          3870.00                           0.033599
+Marshall Islands          3570.00                           0.030995
+           Tonga          3460.00                           0.030040

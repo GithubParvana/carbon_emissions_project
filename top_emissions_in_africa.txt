@@ -1,0 +1,11 @@
+     Country  Kilotons of Co2 Formatted Co2_Africa
+South Africa      10590620.03        10,590,620.03
+       Egypt       4778139.99         4,778,139.99
+     Algeria       3119609.99         3,119,609.99
+     Nigeria       2851100.00         2,851,100.00
+       Libya       1412920.00         1,412,920.00
+     Morocco       1292710.00         1,292,710.00
+     Tunisia        688230.00           688,230.00
+      Angola        553170.00           553,170.00
+    Zimbabwe        381210.00           381,210.00
+       Sudan        332710.00           332,710.00

@@ -1,0 +1,11 @@
+         Country  Kilotons of Co2 Formatted Co2_Oceania
+       Australia      10421949.99         10,421,949.99
+     New Zealand        896770.00            896,770.00
+Papua New Guinea        129340.00            129,340.00
+            Fiji         31850.00             31,850.00
+ Solomon Islands          8430.00              8,430.00
+           Palau          6160.00              6,160.00
+           Samoa          5420.00              5,420.00
+      Micronesia          3870.00              3,870.00
+Marshall Islands          3570.00              3,570.00
+           Tonga          3460.00              3,460.00

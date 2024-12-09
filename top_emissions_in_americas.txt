@@ -1,0 +1,11 @@
+      Country  Kilotons of Co2 Formatted Co2_Americas
+United States     158317880.68         158,317,880.68
+       Canada      15436500.05          15,436,500.05
+       Mexico      12061159.96          12,061,159.96
+       Brazil      10285349.96          10,285,349.96
+    Argentina       4374320.04           4,374,320.04
+    Venezuela       4126760.02           4,126,760.02
+     Colombia       1904850.00           1,904,850.00
+        Chile       1781930.00           1,781,930.00
+         Peru       1082420.00           1,082,420.00
+      Ecuador        868450.00             868,450.00

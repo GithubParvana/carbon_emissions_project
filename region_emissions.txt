@@ -1,0 +1,6 @@
+  Region  Kilotons of Co2
+  Africa      29144590.01
+Americas     214600270.71
+    Asia     367129778.95
+  Europe     179365289.90
+ Oceania      11518039.99

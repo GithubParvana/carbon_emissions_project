@@ -1,0 +1,11 @@
+     Country  Kilotons of Co2  Percentage Contribution Africa
+South Africa      10590620.03                           36.34
+       Egypt       4778139.99                           16.39
+     Algeria       3119609.99                           10.70
+     Nigeria       2851100.00                            9.78
+       Libya       1412920.00                            4.85
+     Morocco       1292710.00                            4.44
+     Tunisia        688230.00                            2.36
+      Angola        553170.00                            1.90
+    Zimbabwe        381210.00                            1.31
+       Sudan        332710.00                            1.14

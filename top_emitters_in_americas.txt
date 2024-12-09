@@ -1,0 +1,11 @@
+      Country  Kilotons of Co2  Percentage Contribution (Americas)
+United States     158317880.68                               73.77
+       Canada      15436500.05                                7.19
+       Mexico      12061159.96                                5.62
+       Brazil      10285349.96                                4.79
+    Argentina       4374320.04                                2.04
+    Venezuela       4126760.02                                1.92
+     Colombia       1904850.00                                0.89
+        Chile       1781930.00                                0.83
+         Peru       1082420.00                                0.50
+      Ecuador        868450.00                                0.40

@@ -200,9 +200,6 @@ while True:
     plt.xticks(rotation=45)
     plt.show()
 
-    highest_emitter_africa = africa_emissions.iloc[0]
-    print(f"The country with the higest CO2 emissions is {highest_emitter_africa['Country']} with {highest_emitter_africa['Kilotons of Co2']} kilotons.")
-
 
 # elif americas_data:
     americas_emissions = americas_data.groupby("Country")["Kilotons of Co2"].sum().reset_index()
@@ -226,9 +223,6 @@ while True:
     plt.ylabel("Total CO2 Emissions (Kilotons)")
     plt.xticks(rotation=45)
     plt.show()
-
-    highest_emitter_americas = americas_emissions.iloc[0]
-    print(f"The country with the higest CO2 emissions is {highest_emitter_americas['Country']} with {highest_emitter_americas['Kilotons of Co2']} kilotons.")
 
 
 # elif oceania_data:
@@ -254,9 +248,6 @@ while True:
     plt.xticks(rotation=45)
     plt.show()
 
-    highest_emitter_oceania = oceania_emissions.iloc[0]
-    print(f"The country with the higest CO2 emissions is {highest_emitter_oceania['Country']} with {highest_emitter_oceania['Kilotons of Co2']} kilotons.")
-
 
 # elif europe_data:
     europe_emissions = europe_data.groupby("Country")["Kilotons of Co2"].sum().reset_index()
@@ -281,9 +272,6 @@ while True:
     plt.ylabel("Total CO2 Emissions (Kilotons)")
     plt.xticks(rotation=45)
     plt.show()
-
-    highest_emitter_europe = europe_emissions.iloc[0]
-    print(f"The country with the higest CO2 emissions is {highest_emitter_europe['Country']} with {highest_emitter_europe['Kilotons of Co2']} kilotons.")
 
     break
 
@@ -312,127 +300,7 @@ plt.xlabel("Country")
 plt.xticks(rotation=45)
 plt.show()
 
-
-# Print the hishest and lowest countries
-print(f"Highest Metric Tons Per Capita in Asia: {highest_emitter} ({avg_metric_tons[highest_emitter]:.2f})")
-print(f"Lowest Metric Tons Per Capita in Asia: {lowest_emitter} ({avg_metric_tons[lowest_emitter]:.2f})")
-
 with open("metric_tones_by_asia.txt", "w", encoding='utf-8') as asia_file:
     asia_file.write(f"Highest Metric Tons Per Capita in Asia: {highest_emitter} ({avg_metric_tons[highest_emitter]:.2f})\n")
     asia_file.write(f"Lowest Metric Tons Per Capita in Asia: {lowest_emitter} ({avg_metric_tons[lowest_emitter]:.2f})")
     asia_file.close()
-
-
-
-"""
-4) Which countries in all Regions have the highest and lowest Metric Tons Per Capita?
-
-"""
-while True:
-
-    # Africa
-    avg_metric_tons_africa = africa_data.groupby("Country")["Metric Tons Per Capita"].mean()
-
-    highest_emitter_africa = avg_metric_tons_africa.idxmax()   # Country with highest
-    lowest_emitter_africa = avg_metric_tons_africa.idxmin()   # Country with lowest
-
-    comparison_data_africa = avg_metric_tons_africa[[highest_emitter_africa, lowest_emitter_africa]].reset_index()
-    comparison_data_africa.columns = ["Country", "Average Metric Tons Per Capita"]
-
-    plt.figure(figsize=(8, 6))
-    plt.bar(comparison_data_africa["Country"], comparison_data_africa["Average Metric Tons Per Capita"], color=["red", "blue"])
-    plt.title("Countries with Highest and Lowest Metric Tons Per Capita in Africa")
-    plt.ylabel("Average Metric Tons Per Capita")
-    plt.xlabel("Country")
-    plt.xticks(rotation=45)
-    plt.show()
-
-    print(f"Highest Metric Tons Per Capita in Africa: {highest_emitter_africa} ({avg_metric_tons_africa[highest_emitter_africa]:.2f})")
-    print(f"Lowest Metric Tons Per Capita in Africa: {lowest_emitter_africa} ({avg_metric_tons_africa[lowest_emitter_africa]:.2f})")
-
-    with open("metric_tons_by_africa.txt", "w", encoding='utf-8') as africa_file:
-        africa_file.write(f"Highest Metric Tons Per Capita in Africa: {highest_emitter_africa} ({avg_metric_tons_africa[highest_emitter_africa]:.2f})\n")
-        africa_file.write(f"Lowest Metric Tons Per Capita in Africa: {lowest_emitter_africa} ({avg_metric_tons_africa[lowest_emitter_africa]:.2f})")
-        africa_file.close()
-    print()
-
-
-    # Americas
-    avg_metric_tons_americas = americas_data.groupby("Country")["Metric Tons Per Capita"].mean()
-
-    highest_emitter_americas = avg_metric_tons_americas.idxmax()   # Country with highest
-    lowest_emitter_americas = avg_metric_tons_americas.idxmin()   # Country with lowest
-
-    comparison_data_americas = avg_metric_tons_americas[[highest_emitter_americas, lowest_emitter_americas]].reset_index()
-    comparison_data_americas.columns = ["Country", "Average Metric Tons Per Capita"]
-
-    plt.figure(figsize=(8, 6))
-    plt.bar(comparison_data_americas["Country"], comparison_data_americas["Average Metric Tons Per Capita"], color=["red", "blue"])
-    plt.title("Countries with Highest and Lowest Metric Tons Per Capita in Americas")
-    plt.ylabel("Average Metric Tons Per Capita")
-    plt.xlabel("Country")
-    plt.xticks(rotation=45)
-    plt.show()
-
-    print(f"Highest Metric Tons Per Capita in Americas: {highest_emitter_americas} ({avg_metric_tons_americas[highest_emitter_americas]:.2f})")
-    print(f"Lowest Metric Tons Per Capita in Americas: {lowest_emitter_americas} ({avg_metric_tons_americas[lowest_emitter_americas]:.2f})")
-
-    with open("metric_tons_by_americas.txt", "w", encoding='utf-8') as americas_file:
-        americas_file.write(f"Highest Metric Tons Per Capita in Americas: {highest_emitter_americas} ({avg_metric_tons_americas[highest_emitter_americas]:.2f})\n")
-        americas_file.write(f"Lowest Metric Tons Per Capita in Americas: {lowest_emitter_americas} ({avg_metric_tons_americas[lowest_emitter_americas]:.2f})")
-        americas_file.close()
-    print()
-
-
-    # Oceania
-    avg_metric_tons_oceania = oceania_data.groupby("Country")["Metric Tons Per Capita"].mean()
-
-    highest_emitter_oceania = avg_metric_tons_oceania.idxmax()   # Country with highest
-    lowest_emitter_oceania = avg_metric_tons_oceania.idxmin()   # Country with lowest
-
-    comparison_data_oceania = avg_metric_tons_oceania[[highest_emitter_oceania, lowest_emitter_oceania]].reset_index()
-    comparison_data_oceania.columns = ["Country", "Average Metric Tons Per Capita"]
-
-    plt.figure(figsize=(8, 6))
-    plt.bar(comparison_data_oceania["Country"], comparison_data_oceania["Average Metric Tons Per Capita"], color=["red", "blue"])
-    plt.title("Countries with Highest and Lowest Metric Tons Per Capita in Oceania")
-    plt.ylabel("Average Metric Tons Per Capita")
-    plt.xlabel("Country")
-    plt.xticks(rotation=45)
-    plt.show()
-
-    print(f"Highest Metric Tons Per Capita in Oceania: {highest_emitter_oceania} ({avg_metric_tons_oceania[highest_emitter_oceania]:.2f})")
-    print(f"Lowest Metric Tons Per Capita in Oceania: {lowest_emitter_oceania} ({avg_metric_tons_oceania[lowest_emitter_oceania]:.2f})")
-    
-    with open("metric_tons_by_oceania.txt", "w", encoding='utf-8') as oceania_file:
-        oceania_file.write(f"Highest Metric Tons Per Capita in Oceania: {highest_emitter_oceania} ({avg_metric_tons_oceania[highest_emitter_oceania]:.2f})\n")
-        oceania_file.write(f"Lowest Metric Tons Per Capita in Oceania: {lowest_emitter_oceania} ({avg_metric_tons_oceania[lowest_emitter_oceania]:.2f})")
-        oceania_file.close()
-    print()
-
-    # Europe
-    avg_metric_tons_europe = europe_data.groupby("Country")["Metric Tons Per Capita"].mean()
-
-    highest_emitter_europe = avg_metric_tons_europe.idxmax()   # Country with highest
-    lowest_emitter_europe = avg_metric_tons_europe.idxmin()   # Country with lowest
-
-    comparison_data_europe = avg_metric_tons_europe[[highest_emitter_europe, lowest_emitter_europe]].reset_index()
-    comparison_data_europe.columns = ["Country", "Average Metric Tons Per Capita"]
-
-    plt.figure(figsize=(8, 6))
-    plt.bar(comparison_data_europe["Country"], comparison_data_europe["Average Metric Tons Per Capita"], color=["red", "blue"])
-    plt.title("Countries with Highest and Lowest Metric Tons Per Capita in Europe")
-    plt.ylabel("Average Metric Tons Per Capita")
-    plt.xlabel("Country")
-    plt.xticks(rotation=45)
-    plt.show()
-
-    print(f"Highest Metric Tons Per Capita in Europe: {highest_emitter_europe} ({avg_metric_tons_europe[highest_emitter_europe]:.2f})")
-    print(f"Lowest Metric Tons Per Capita in Europe: {lowest_emitter_europe} ({avg_metric_tons_europe[lowest_emitter_europe]:.2f})")
-
-    with open("metric_tons_by_europe.txt", "w", encoding='utf-8') as europe_file:
-        europe_file.write(f"Highest Metric Tons Per Capita in Europe: {highest_emitter_europe} ({avg_metric_tons_europe[highest_emitter_europe]:.2f})\n")
-        europe_file.write(f"Lowest Metric Tons Per Capita in Europe: {lowest_emitter_europe} ({avg_metric_tons_europe[lowest_emitter_europe]:.2f})")
-        europe_file.close()
-
-    break
